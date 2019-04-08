@@ -26,7 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SampleResources/Scenes/3-VuMarks.unity
     guid: d9b53b25a285640cf8ac170a80603e34
-  - enabled: 1
+  - enabled: 0
     path: Assets/HoloHistory/RoomTest/RoomTest.unity
     guid: de26d141dbea9ac4aa9d8c662cd5e243
+  - enabled: 1
+    path: Assets/HoloHistory/SWRwalkinInRoom.unity
+    guid: dc4f0a96463fb824f865dab036058c13
   m_configObjects: {}

@@ -24,12 +24,27 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     protected TrackableBehaviour.Status m_NewStatus;
 
     #endregion // PROTECTED_MEMBER_VARIABLES
+    public TextMesh meshText;
+    public TextMesh guyText;
+    public TextMesh camText;
+    public GameObject mesh;
+    public GameObject guy;
+    public GameObject cam;
+
 
     #region UNITY_MONOBEHAVIOUR_METHODS
 
+    void Update() {
+        meshText.text = "mesh at: " + mesh.transform.position;
+        guyText.text = "guy at: " + guy.transform.position;
+        camText.text = "cam at: " + cam.transform.position;
+    }
+
     protected virtual void Start()
     {
-        mTrackableBehaviour = GetComponent<TrackableBehaviour>();
+
+        //exampleText.text = "testing";
+            mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
     }
