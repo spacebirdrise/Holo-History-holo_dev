@@ -8,6 +8,10 @@ Confidential and Proprietary - Protected under copyright and other laws.
 
 using UnityEngine;
 using Vuforia;
+using System.Collections;
+using System.Collections.Generic;
+using RogoDigital.Lipsync;
+using System;
 
 /// <summary>
 /// A custom handler that implements the ITrackableEventHandler interface.
@@ -32,12 +36,41 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public GameObject mesh;
     public GameObject guy;
     public GameObject cam;
+    public GameObject Dole;
+    public GameObject Coffer;
     public Animator anim;
-  
+
+    public class GameStateController : MonoBehaviour
+    {
+        enum possibleGameStatesRelatedToSWR
+        {
+            Intro,
+            PresentRiddle,
+            RightAnswer,
+            WrongAnswer,
+            Idle,
+            Outro
+        };
+        possibleGameStatesRelatedToSWR currentGameState = SWREnumHelpers.GetEnumObjectByValue<possibleGameStatesRelatedToSWR>(0);
+        public List<AudioClip> Riddles;
+        public List<AudioClip> RightAnswerResponse;
+        public List<AudioClip> WrongAnswerResponse;
+        public AudioSource SWRAudioSource;
+      //  public LipSync SWRLipSyncObject;
+      //  public List<LipSyncData> lipsyncDataCorrespondingToEachAudioClip;
 
 
 
 
+    }
+    public static class SWREnumHelpers
+    {
+        public static T GetEnumObjectByValue<T>(int valueId)
+        {
+            return (T)Enum.ToObject(typeof(T), valueId);
+        }
+    }
+    
     #region UNITY_MONOBEHAVIOUR_METHODS
 
     void Update() {

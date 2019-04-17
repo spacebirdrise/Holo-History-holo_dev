@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1073,6 +1073,134 @@ MonoBehaviour:
     blendableRandomness: 0
     bonePositionRandomness: 0
     boneRotationRandomness: 0
+  emotionData:
+  - emotion: Serious
+    isMixer: 0
+    mixer:
+      emotions: []
+      displayColor: {r: 0, g: 0, b: 0, a: 1}
+    startTime: 0.014863804
+    endTime: 0.15023647
+    blendInTime: 0.03251382
+    blendOutTime: -0.069679685
+    blendToMarker: 1
+    blendFromMarker: 0
+    customBlendIn: 1
+    customBlendOut: 0
+    intensity: 0.527
+    continuousVariation: 1
+    variationFrequency: 0.34
+    intensityVariation: 0.129
+    blendableVariation: 0.039
+    bonePositionVariation: 0.047
+    boneRotationVariation: 0.043
+    invalid: 0
+  - emotion: Eyebrows Up
+    isMixer: 0
+    mixer:
+      emotions: []
+      displayColor: {r: 0, g: 0, b: 0, a: 1}
+    startTime: 0.08055679
+    endTime: 0.24857658
+    blendInTime: 0.069679685
+    blendOutTime: -0.03312271
+    blendToMarker: 0
+    blendFromMarker: 1
+    customBlendIn: 0
+    customBlendOut: 1
+    intensity: 0.713
+    continuousVariation: 1
+    variationFrequency: 0.31
+    intensityVariation: 0.125
+    blendableVariation: 0.032
+    bonePositionVariation: 0.032
+    boneRotationVariation: 0.036
+    invalid: 0
+  - emotion: Eyebrows Up
+    isMixer: 0
+    mixer:
+      emotions: []
+      displayColor: {r: 0, g: 0, b: 0, a: 1}
+    startTime: 0.38446212
+    endTime: 0.5057769
+    blendInTime: 0.030472375
+    blendOutTime: -0.04262948
+    blendToMarker: 1
+    blendFromMarker: 0
+    customBlendIn: 1
+    customBlendOut: 0
+    intensity: 1
+    continuousVariation: 1
+    variationFrequency: 0.52
+    intensityVariation: 0.104
+    blendableVariation: 0.043
+    bonePositionVariation: 0.043
+    boneRotationVariation: 0.039
+    invalid: 0
+  - emotion: Serious
+    isMixer: 0
+    mixer:
+      emotions: []
+      displayColor: {r: 0, g: 0, b: 0, a: 1}
+    startTime: 0.4631474
+    endTime: 0.7262764
+    blendInTime: 0.04262948
+    blendOutTime: -0.07013029
+    blendToMarker: 1
+    blendFromMarker: 1
+    customBlendIn: 0
+    customBlendOut: 0
+    intensity: 1
+    continuousVariation: 1
+    variationFrequency: 0.64
+    intensityVariation: 0.108
+    blendableVariation: 0.032
+    bonePositionVariation: 0.029
+    boneRotationVariation: 0.032
+    invalid: 0
+  - emotion: Serious
+    isMixer: 0
+    mixer:
+      emotions: []
+      displayColor: {r: 0, g: 0, b: 0, a: 1}
+    startTime: 0.6561461
+    endTime: 0.82669324
+    blendInTime: 0.07013029
+    blendOutTime: -0.027888417
+    blendToMarker: 1
+    blendFromMarker: 1
+    customBlendIn: 0
+    customBlendOut: 0
+    intensity: 0.724
+    continuousVariation: 1
+    variationFrequency: 1.01
+    intensityVariation: 0.111
+    blendableVariation: 0.029
+    bonePositionVariation: 0.036
+    boneRotationVariation: 0.032
+    invalid: 0
+  - emotion: Eyebrows Up
+    isMixer: 0
+    mixer:
+      emotions: []
+      displayColor: {r: 0, g: 0, b: 0, a: 1}
+    startTime: 0.7988048
+    endTime: 0.95455945
+    blendInTime: 0.027888417
+    blendOutTime: -0.04471931
+    blendToMarker: 0
+    blendFromMarker: 1
+    customBlendIn: 0
+    customBlendOut: 1
+    intensity: 1
+    continuousVariation: 1
+    variationFrequency: 1.05
+    intensityVariation: 0.09
+    blendableVariation: 0.032
+    bonePositionVariation: 0.029
+    boneRotationVariation: 0.032
+    invalid: 0
+  gestureData: []
   version: 1.401
   length: 13.794467
   transcript: Four score and seven years ago, our fathers brought forth on this continent

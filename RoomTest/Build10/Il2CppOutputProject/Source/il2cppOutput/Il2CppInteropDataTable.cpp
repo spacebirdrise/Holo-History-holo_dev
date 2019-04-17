@@ -10591,6 +10591,8 @@ extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_SpriteDataU5BU5D_t2729489
 extern const RuntimeType SpriteDataU5BU5D_t2729489A91C1279AAA0EAFA62921F18A1143BB41_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_ModelTargetBehaviourU5BU5D_t7C081ED9446E930306255382D788CD614D99F69B(RuntimeObject* obj);
 extern const RuntimeType ModelTargetBehaviourU5BU5D_t7C081ED9446E930306255382D788CD614D99F69B_0_0_0;
+extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2(RuntimeObject* obj);
+extern const RuntimeType AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_GB18030MapU5BU5D_tE3F2C54FFBD02AFF94006891BA0F4E9166B02848(RuntimeObject* obj);
 extern const RuntimeType GB18030MapU5BU5D_tE3F2C54FFBD02AFF94006891BA0F4E9166B02848_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_EntryU5BU5D_t08A93E8E1F58353B2733285F14D292417DEAF99E(RuntimeObject* obj);
@@ -10713,8 +10715,6 @@ extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_OptionU5BU5D_t27D6870ABA6
 extern const RuntimeType OptionU5BU5D_t27D6870ABA65DA2F52CE99453C87334C43A9246C_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_SafeAreaRectU5BU5D_t3075F8D52DA3E1BBC1C8A27B8D57191CDFE45820(RuntimeObject* obj);
 extern const RuntimeType SafeAreaRectU5BU5D_t3075F8D52DA3E1BBC1C8A27B8D57191CDFE45820_0_0_0;
-extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2(RuntimeObject* obj);
-extern const RuntimeType AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_LipSyncDataU5BU5D_t508F63935008E1D4D0506E8F6F9E4C80BB67ED19(RuntimeObject* obj);
 extern const RuntimeType LipSyncDataU5BU5D_t508F63935008E1D4D0506E8F6F9E4C80BB67ED19_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_LipSyncDataBaseU5BU5D_t23D9AF8542FC946A20BD8A053DA19F27178F2D32(RuntimeObject* obj);
@@ -19026,6 +19026,16 @@ extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_WhereListIterator_1_t8A04
 extern const RuntimeType WhereListIterator_1_t8A047EBAC68317B4B628268A9D9BAB37EB91F9B4_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_WhereEnumerableIterator_1_t0507AFBA9E379289877B3ABDF59F9B19A33757E1(RuntimeObject* obj);
 extern const RuntimeType WhereEnumerableIterator_1_t0507AFBA9E379289877B3ABDF59F9B19A33757E1_0_0_0;
+extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F(RuntimeObject* obj);
+extern const RuntimeType List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F_0_0_0;
+extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665(RuntimeObject* obj);
+extern const RuntimeType EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665_0_0_0;
+extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF(RuntimeObject* obj);
+extern const RuntimeType InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF_0_0_0;
+extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED(RuntimeObject* obj);
+extern const RuntimeType ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED_0_0_0;
+extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08(RuntimeObject* obj);
+extern const RuntimeType Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t5747AA161F6839ABD568CE76CA1C784DA745CEAC(RuntimeObject* obj);
 extern const RuntimeType EmptyInternalEnumerator_1_t5747AA161F6839ABD568CE76CA1C784DA745CEAC_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_InternalEnumerator_1_t18074A2CB2E881F245979F9DB6815A3DA0AEA582(RuntimeObject* obj);
@@ -19584,16 +19594,6 @@ extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_EmptyInternalEnumerator_1
 extern const RuntimeType EmptyInternalEnumerator_1_t662E2EFDC2EDFF0472812E889360B9603644AC38_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_InternalEnumerator_1_t993008EF0A5CC276803601C1A104541EA0B735E2(RuntimeObject* obj);
 extern const RuntimeType InternalEnumerator_1_t993008EF0A5CC276803601C1A104541EA0B735E2_0_0_0;
-extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F(RuntimeObject* obj);
-extern const RuntimeType List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F_0_0_0;
-extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665(RuntimeObject* obj);
-extern const RuntimeType EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665_0_0_0;
-extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF(RuntimeObject* obj);
-extern const RuntimeType InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF_0_0_0;
-extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED(RuntimeObject* obj);
-extern const RuntimeType ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED_0_0_0;
-extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08(RuntimeObject* obj);
-extern const RuntimeType Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_List_1_t26F696CBEA5B6BDA8ED379D9565A54B652BABB08(RuntimeObject* obj);
 extern const RuntimeType List_1_t26F696CBEA5B6BDA8ED379D9565A54B652BABB08_0_0_0;
 extern "C" Il2CppIUnknown* CreateComCallableWrapperFor_EmptyInternalEnumerator_1_tF29D94FD2A10B579FA7493FC79C71E74D3991617(RuntimeObject* obj);
@@ -21435,6 +21435,7 @@ extern Il2CppInteropData g_Il2CppInteropData[6634] =
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_KeyValuePair_2U5BU5D_tCC47C94DB04F815FF5CB5490F59EBB0CF487C42F, NULL, &KeyValuePair_2U5BU5D_tCC47C94DB04F815FF5CB5490F59EBB0CF487C42F_0_0_0 } /* System.Collections.Generic.KeyValuePair`2<System.Action`2<System.Boolean,TMPro.TextMeshProUGUI>,System.Collections.Generic.LinkedListNode`1<System.Action`2<System.Boolean,TMPro.TextMeshProUGUI>>>[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_SpriteDataU5BU5D_t2729489A91C1279AAA0EAFA62921F18A1143BB41, NULL, &SpriteDataU5BU5D_t2729489A91C1279AAA0EAFA62921F18A1143BB41_0_0_0 } /* TMPro.SpriteAssetUtilities.TexturePacker/SpriteData[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_ModelTargetBehaviourU5BU5D_t7C081ED9446E930306255382D788CD614D99F69B, NULL, &ModelTargetBehaviourU5BU5D_t7C081ED9446E930306255382D788CD614D99F69B_0_0_0 } /* Vuforia.ModelTargetBehaviour[] */,
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2, NULL, &AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2_0_0_0 } /* UnityEngine.AudioClip[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_GB18030MapU5BU5D_tE3F2C54FFBD02AFF94006891BA0F4E9166B02848, NULL, &GB18030MapU5BU5D_tE3F2C54FFBD02AFF94006891BA0F4E9166B02848_0_0_0 } /* I18N.CJK.GB18030Source/GB18030Map[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_EntryU5BU5D_t08A93E8E1F58353B2733285F14D292417DEAF99E, NULL, &EntryU5BU5D_t08A93E8E1F58353B2733285F14D292417DEAF99E_0_0_0 } /* System.Collections.Generic.Dictionary`2/Entry<System.UInt32,Microsoft.MixedReality.Toolkit.Core.Interfaces.Devices.IMixedRealityController>[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_KeyValuePair_2U5BU5D_tAE8D97D616F53BEFFA203BD44B46547284F6938D, NULL, &KeyValuePair_2U5BU5D_tAE8D97D616F53BEFFA203BD44B46547284F6938D_0_0_0 } /* System.Collections.Generic.KeyValuePair`2<System.UInt32,Microsoft.MixedReality.Toolkit.Core.Interfaces.Devices.IMixedRealityController>[] */,
@@ -21496,7 +21497,6 @@ extern Il2CppInteropData g_Il2CppInteropData[6634] =
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_FrameInfoU5BU5D_t4BE28470D96498433B78E418E40F10CE82E6C388, NULL, &FrameInfoU5BU5D_t4BE28470D96498433B78E418E40F10CE82E6C388_0_0_0 } /* Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.MixedRealityToolkitVisualProfiler/FrameInfo[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_OptionU5BU5D_t27D6870ABA65DA2F52CE99453C87334C43A9246C, NULL, &OptionU5BU5D_t27D6870ABA65DA2F52CE99453C87334C43A9246C_0_0_0 } /* OptionsConfig/Option[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_SafeAreaRectU5BU5D_t3075F8D52DA3E1BBC1C8A27B8D57191CDFE45820, NULL, &SafeAreaRectU5BU5D_t3075F8D52DA3E1BBC1C8A27B8D57191CDFE45820_0_0_0 } /* SafeAreaManager/SafeAreaRect[] */,
-	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2, NULL, &AudioClipU5BU5D_t03931BD44BC339329210676E452B8ECD3EC171C2_0_0_0 } /* UnityEngine.AudioClip[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_LipSyncDataU5BU5D_t508F63935008E1D4D0506E8F6F9E4C80BB67ED19, NULL, &LipSyncDataU5BU5D_t508F63935008E1D4D0506E8F6F9E4C80BB67ED19_0_0_0 } /* RogoDigital.Lipsync.LipSyncData[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_LipSyncDataBaseU5BU5D_t23D9AF8542FC946A20BD8A053DA19F27178F2D32, NULL, &LipSyncDataBaseU5BU5D_t23D9AF8542FC946A20BD8A053DA19F27178F2D32_0_0_0 } /* RogoDigital.Lipsync.LipSyncDataBase[] */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_GuideViewRenderingBehaviourU5BU5D_t54514C0B31DA80E1916354338F453E3200C1372F, NULL, &GuideViewRenderingBehaviourU5BU5D_t54514C0B31DA80E1916354338F453E3200C1372F_0_0_0 } /* Vuforia.GuideViewRenderingBehaviour[] */,
@@ -26021,6 +26021,11 @@ extern Il2CppInteropData g_Il2CppInteropData[6634] =
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_WhereArrayIterator_1_tD37F542B1C81ED012BA0B4852E057F82D351F6F1, NULL, &WhereArrayIterator_1_tD37F542B1C81ED012BA0B4852E057F82D351F6F1_0_0_0 } /* System.Linq.Enumerable/WhereArrayIterator`1<Vuforia.ModelTargetBehaviour> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_WhereListIterator_1_t8A047EBAC68317B4B628268A9D9BAB37EB91F9B4, NULL, &WhereListIterator_1_t8A047EBAC68317B4B628268A9D9BAB37EB91F9B4_0_0_0 } /* System.Linq.Enumerable/WhereListIterator`1<Vuforia.ModelTargetBehaviour> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_WhereEnumerableIterator_1_t0507AFBA9E379289877B3ABDF59F9B19A33757E1, NULL, &WhereEnumerableIterator_1_t0507AFBA9E379289877B3ABDF59F9B19A33757E1_0_0_0 } /* System.Linq.Enumerable/WhereEnumerableIterator`1<Vuforia.ModelTargetBehaviour> */,
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F, NULL, &List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F_0_0_0 } /* System.Collections.Generic.List`1<UnityEngine.AudioClip> */,
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665, NULL, &EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665_0_0_0 } /* System.Array/EmptyInternalEnumerator`1<UnityEngine.AudioClip> */,
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF, NULL, &InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF_0_0_0 } /* System.Array/InternalEnumerator`1<UnityEngine.AudioClip> */,
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED, NULL, &ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED_0_0_0 } /* System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.AudioClip> */,
+	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08, NULL, &Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08_0_0_0 } /* System.Collections.Generic.List`1/Enumerator<UnityEngine.AudioClip> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t5747AA161F6839ABD568CE76CA1C784DA745CEAC, NULL, &EmptyInternalEnumerator_1_t5747AA161F6839ABD568CE76CA1C784DA745CEAC_0_0_0 } /* System.Array/EmptyInternalEnumerator`1<I18N.CJK.GB18030Source/GB18030Map> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_InternalEnumerator_1_t18074A2CB2E881F245979F9DB6815A3DA0AEA582, NULL, &InternalEnumerator_1_t18074A2CB2E881F245979F9DB6815A3DA0AEA582_0_0_0 } /* System.Array/InternalEnumerator`1<I18N.CJK.GB18030Source/GB18030Map> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_Dictionary_2_t50BBB860C11BF8E0BD12AABF9265E4076DF89D4F, NULL, &Dictionary_2_t50BBB860C11BF8E0BD12AABF9265E4076DF89D4F_0_0_0 } /* System.Collections.Generic.Dictionary`2<System.UInt32,Microsoft.MixedReality.Toolkit.Core.Interfaces.Devices.IMixedRealityController> */,
@@ -26300,11 +26305,6 @@ extern Il2CppInteropData g_Il2CppInteropData[6634] =
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_InternalEnumerator_1_t51082D3645C10860A409675C65D375B3E9E1CCE6, NULL, &InternalEnumerator_1_t51082D3645C10860A409675C65D375B3E9E1CCE6_0_0_0 } /* System.Array/InternalEnumerator`1<OptionsConfig/Option> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t662E2EFDC2EDFF0472812E889360B9603644AC38, NULL, &EmptyInternalEnumerator_1_t662E2EFDC2EDFF0472812E889360B9603644AC38_0_0_0 } /* System.Array/EmptyInternalEnumerator`1<SafeAreaManager/SafeAreaRect> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_InternalEnumerator_1_t993008EF0A5CC276803601C1A104541EA0B735E2, NULL, &InternalEnumerator_1_t993008EF0A5CC276803601C1A104541EA0B735E2_0_0_0 } /* System.Array/InternalEnumerator`1<SafeAreaManager/SafeAreaRect> */,
-	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F, NULL, &List_1_tE0FA93AA3DC624E2BF3DC417F5FEBE1DBD81256F_0_0_0 } /* System.Collections.Generic.List`1<UnityEngine.AudioClip> */,
-	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665, NULL, &EmptyInternalEnumerator_1_t2083124FD0E9382BD06EDF7E3A0E69813642E665_0_0_0 } /* System.Array/EmptyInternalEnumerator`1<UnityEngine.AudioClip> */,
-	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF, NULL, &InternalEnumerator_1_tB3A57BF08316D76DDB7CA14366E1A2AE59AEAFBF_0_0_0 } /* System.Array/InternalEnumerator`1<UnityEngine.AudioClip> */,
-	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED, NULL, &ReadOnlyCollection_1_t06EA5088E36D3F73F0FC18B268393E2C1F001BED_0_0_0 } /* System.Collections.ObjectModel.ReadOnlyCollection`1<UnityEngine.AudioClip> */,
-	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08, NULL, &Enumerator_t48081277AB8EF04F24E537BF58A6FDFF15865A08_0_0_0 } /* System.Collections.Generic.List`1/Enumerator<UnityEngine.AudioClip> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_List_1_t26F696CBEA5B6BDA8ED379D9565A54B652BABB08, NULL, &List_1_t26F696CBEA5B6BDA8ED379D9565A54B652BABB08_0_0_0 } /* System.Collections.Generic.List`1<RogoDigital.Lipsync.LipSyncData> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_EmptyInternalEnumerator_1_tF29D94FD2A10B579FA7493FC79C71E74D3991617, NULL, &EmptyInternalEnumerator_1_tF29D94FD2A10B579FA7493FC79C71E74D3991617_0_0_0 } /* System.Array/EmptyInternalEnumerator`1<RogoDigital.Lipsync.LipSyncData> */,
 	{ NULL, NULL, NULL, NULL, CreateComCallableWrapperFor_InternalEnumerator_1_tCB8EE4FE04DC4C82E84D4AF8EE3F37BB64A995B2, NULL, &InternalEnumerator_1_tCB8EE4FE04DC4C82E84D4AF8EE3F37BB64A995B2_0_0_0 } /* System.Array/InternalEnumerator`1<RogoDigital.Lipsync.LipSyncData> */,

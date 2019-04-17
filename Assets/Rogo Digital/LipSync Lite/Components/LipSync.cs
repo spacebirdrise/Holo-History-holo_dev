@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-#if !UNITY_EDITOR && UNITY_WINRT_10_0
-        using Windows.Storage;
-#endif
 namespace RogoDigital.Lipsync {
 	[AddComponentMenu("Rogo Digital/LipSync Lite")]
 	[DisallowMultipleComponent]

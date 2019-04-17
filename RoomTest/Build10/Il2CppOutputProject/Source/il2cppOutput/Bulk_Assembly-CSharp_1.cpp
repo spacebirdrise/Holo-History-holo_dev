@@ -3452,8 +3452,12 @@ public:
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___guy_13;
 	// UnityEngine.GameObject DefaultTrackableEventHandler::cam
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___cam_14;
+	// UnityEngine.GameObject DefaultTrackableEventHandler::Dole
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___Dole_15;
+	// UnityEngine.GameObject DefaultTrackableEventHandler::Coffer
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___Coffer_16;
 	// UnityEngine.Animator DefaultTrackableEventHandler::anim
-	Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * ___anim_15;
+	Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * ___anim_17;
 
 public:
 	inline static int32_t get_offset_of_mTrackableBehaviour_4() { return static_cast<int32_t>(offsetof(DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022, ___mTrackableBehaviour_4)); }
@@ -3553,13 +3557,31 @@ public:
 		Il2CppCodeGenWriteBarrier((&___cam_14), value);
 	}
 
-	inline static int32_t get_offset_of_anim_15() { return static_cast<int32_t>(offsetof(DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022, ___anim_15)); }
-	inline Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * get_anim_15() const { return ___anim_15; }
-	inline Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A ** get_address_of_anim_15() { return &___anim_15; }
-	inline void set_anim_15(Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * value)
+	inline static int32_t get_offset_of_Dole_15() { return static_cast<int32_t>(offsetof(DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022, ___Dole_15)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_Dole_15() const { return ___Dole_15; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_Dole_15() { return &___Dole_15; }
+	inline void set_Dole_15(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___anim_15 = value;
-		Il2CppCodeGenWriteBarrier((&___anim_15), value);
+		___Dole_15 = value;
+		Il2CppCodeGenWriteBarrier((&___Dole_15), value);
+	}
+
+	inline static int32_t get_offset_of_Coffer_16() { return static_cast<int32_t>(offsetof(DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022, ___Coffer_16)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_Coffer_16() const { return ___Coffer_16; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_Coffer_16() { return &___Coffer_16; }
+	inline void set_Coffer_16(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	{
+		___Coffer_16 = value;
+		Il2CppCodeGenWriteBarrier((&___Coffer_16), value);
+	}
+
+	inline static int32_t get_offset_of_anim_17() { return static_cast<int32_t>(offsetof(DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022, ___anim_17)); }
+	inline Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * get_anim_17() const { return ___anim_17; }
+	inline Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A ** get_address_of_anim_17() { return &___anim_17; }
+	inline void set_anim_17(Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * value)
+	{
+		___anim_17 = value;
+		Il2CppCodeGenWriteBarrier((&___anim_17), value);
 	}
 };
 
@@ -3756,59 +3778,59 @@ struct  VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B  :
 {
 public:
 	// Vuforia.VuMarkBehaviour VuMarkTrackableEventHandler::vumarkBehaviour
-	VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * ___vumarkBehaviour_18;
+	VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * ___vumarkBehaviour_20;
 	// UnityEngine.LineRenderer VuMarkTrackableEventHandler::lineRenderer
-	LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * ___lineRenderer_19;
+	LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * ___lineRenderer_21;
 	// UnityEngine.CanvasGroup VuMarkTrackableEventHandler::canvasGroup
-	CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * ___canvasGroup_20;
+	CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * ___canvasGroup_22;
 	// UnityEngine.Vector2 VuMarkTrackableEventHandler::fadeRange
-	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___fadeRange_21;
+	Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___fadeRange_23;
 	// UnityEngine.Transform VuMarkTrackableEventHandler::centralAnchorPoint
-	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * ___centralAnchorPoint_22;
+	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * ___centralAnchorPoint_24;
 
 public:
-	inline static int32_t get_offset_of_vumarkBehaviour_18() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___vumarkBehaviour_18)); }
-	inline VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * get_vumarkBehaviour_18() const { return ___vumarkBehaviour_18; }
-	inline VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 ** get_address_of_vumarkBehaviour_18() { return &___vumarkBehaviour_18; }
-	inline void set_vumarkBehaviour_18(VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * value)
+	inline static int32_t get_offset_of_vumarkBehaviour_20() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___vumarkBehaviour_20)); }
+	inline VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * get_vumarkBehaviour_20() const { return ___vumarkBehaviour_20; }
+	inline VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 ** get_address_of_vumarkBehaviour_20() { return &___vumarkBehaviour_20; }
+	inline void set_vumarkBehaviour_20(VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * value)
 	{
-		___vumarkBehaviour_18 = value;
-		Il2CppCodeGenWriteBarrier((&___vumarkBehaviour_18), value);
+		___vumarkBehaviour_20 = value;
+		Il2CppCodeGenWriteBarrier((&___vumarkBehaviour_20), value);
 	}
 
-	inline static int32_t get_offset_of_lineRenderer_19() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___lineRenderer_19)); }
-	inline LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * get_lineRenderer_19() const { return ___lineRenderer_19; }
-	inline LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 ** get_address_of_lineRenderer_19() { return &___lineRenderer_19; }
-	inline void set_lineRenderer_19(LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * value)
+	inline static int32_t get_offset_of_lineRenderer_21() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___lineRenderer_21)); }
+	inline LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * get_lineRenderer_21() const { return ___lineRenderer_21; }
+	inline LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 ** get_address_of_lineRenderer_21() { return &___lineRenderer_21; }
+	inline void set_lineRenderer_21(LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * value)
 	{
-		___lineRenderer_19 = value;
-		Il2CppCodeGenWriteBarrier((&___lineRenderer_19), value);
+		___lineRenderer_21 = value;
+		Il2CppCodeGenWriteBarrier((&___lineRenderer_21), value);
 	}
 
-	inline static int32_t get_offset_of_canvasGroup_20() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___canvasGroup_20)); }
-	inline CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * get_canvasGroup_20() const { return ___canvasGroup_20; }
-	inline CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 ** get_address_of_canvasGroup_20() { return &___canvasGroup_20; }
-	inline void set_canvasGroup_20(CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * value)
+	inline static int32_t get_offset_of_canvasGroup_22() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___canvasGroup_22)); }
+	inline CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * get_canvasGroup_22() const { return ___canvasGroup_22; }
+	inline CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 ** get_address_of_canvasGroup_22() { return &___canvasGroup_22; }
+	inline void set_canvasGroup_22(CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * value)
 	{
-		___canvasGroup_20 = value;
-		Il2CppCodeGenWriteBarrier((&___canvasGroup_20), value);
+		___canvasGroup_22 = value;
+		Il2CppCodeGenWriteBarrier((&___canvasGroup_22), value);
 	}
 
-	inline static int32_t get_offset_of_fadeRange_21() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___fadeRange_21)); }
-	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  get_fadeRange_21() const { return ___fadeRange_21; }
-	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * get_address_of_fadeRange_21() { return &___fadeRange_21; }
-	inline void set_fadeRange_21(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  value)
+	inline static int32_t get_offset_of_fadeRange_23() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___fadeRange_23)); }
+	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  get_fadeRange_23() const { return ___fadeRange_23; }
+	inline Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * get_address_of_fadeRange_23() { return &___fadeRange_23; }
+	inline void set_fadeRange_23(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  value)
 	{
-		___fadeRange_21 = value;
+		___fadeRange_23 = value;
 	}
 
-	inline static int32_t get_offset_of_centralAnchorPoint_22() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___centralAnchorPoint_22)); }
-	inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * get_centralAnchorPoint_22() const { return ___centralAnchorPoint_22; }
-	inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA ** get_address_of_centralAnchorPoint_22() { return &___centralAnchorPoint_22; }
-	inline void set_centralAnchorPoint_22(Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * value)
+	inline static int32_t get_offset_of_centralAnchorPoint_24() { return static_cast<int32_t>(offsetof(VuMarkTrackableEventHandler_t3FA22A1DA17C3830A56ABF761063A60BE883252B, ___centralAnchorPoint_24)); }
+	inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * get_centralAnchorPoint_24() const { return ___centralAnchorPoint_24; }
+	inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA ** get_address_of_centralAnchorPoint_24() { return &___centralAnchorPoint_24; }
+	inline void set_centralAnchorPoint_24(Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * value)
 	{
-		___centralAnchorPoint_22 = value;
-		Il2CppCodeGenWriteBarrier((&___centralAnchorPoint_22), value);
+		___centralAnchorPoint_24 = value;
+		Il2CppCodeGenWriteBarrier((&___centralAnchorPoint_24), value);
 	}
 };
 
@@ -4494,7 +4516,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_Start_mA26D8237F6
 		DefaultTrackableEventHandler_Start_mF3B83475AAE698302E8A037B49DA2297894216DE(__this, /*hidden argument*/NULL);
 		// this.canvasGroup = GetComponentInChildren<CanvasGroup>();
 		CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * L_0 = Component_GetComponentInChildren_TisCanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90_mB2EDF6B4F0F8F7DBAC2983C4BA4293103AFF50C7(__this, /*hidden argument*/Component_GetComponentInChildren_TisCanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90_mB2EDF6B4F0F8F7DBAC2983C4BA4293103AFF50C7_RuntimeMethod_var);
-		__this->set_canvasGroup_20(L_0);
+		__this->set_canvasGroup_22(L_0);
 		// this.fadeRange = VuforiaRuntimeUtilities.IsPlayMode() ? new Vector2(0.5f, 0.6f) : new Vector2(0.9f, 1.0f);
 		IL2CPP_RUNTIME_CLASS_INIT(VuforiaRuntimeUtilities_t2BBA4B702A9982A803DE4C93AEF9591B12744DA7_il2cpp_TypeInfo_var);
 		bool L_1 = VuforiaRuntimeUtilities_IsPlayMode_mEFD3CAA3ED825B2EF52F29F7E38067343F82B7BD(/*hidden argument*/NULL);
@@ -4526,7 +4548,7 @@ IL_002b:
 IL_003a:
 	{
 		NullCheck(G_B3_1);
-		G_B3_1->set_fadeRange_21(G_B3_0);
+		G_B3_1->set_fadeRange_23(G_B3_0);
 		// VuforiaARController.Instance.RegisterVuforiaStartedCallback(OnVuforiaStarted);
 		IL2CPP_RUNTIME_CLASS_INIT(VuforiaARController_t7732FFB77105A2F5BBEA40E3CECC5C15DA624876_il2cpp_TypeInfo_var);
 		VuforiaARController_t7732FFB77105A2F5BBEA40E3CECC5C15DA624876 * L_4 = VuforiaARController_get_Instance_m88278E3FE64C49BDDF48D5A6F7627654B7747A9D(/*hidden argument*/NULL);
@@ -4544,15 +4566,15 @@ IL_003a:
 	{
 		// this.vumarkBehaviour = (VuMarkBehaviour)this.mTrackableBehaviour;
 		TrackableBehaviour_t579D75AAFEF7B2D69F4B68931D5A58074E80A7E4 * L_7 = ((DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022 *)__this)->get_mTrackableBehaviour_4();
-		__this->set_vumarkBehaviour_18(((VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 *)CastclassClass((RuntimeObject*)L_7, VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4_il2cpp_TypeInfo_var)));
+		__this->set_vumarkBehaviour_20(((VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 *)CastclassClass((RuntimeObject*)L_7, VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4_il2cpp_TypeInfo_var)));
 		// this.vumarkBehaviour.RegisterVuMarkTargetAssignedCallback(OnVuMarkTargetAssigned);
-		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_8 = __this->get_vumarkBehaviour_18();
+		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_8 = __this->get_vumarkBehaviour_20();
 		Action_t591D2A86165F896B4B800BB5C25CE18672A55579 * L_9 = (Action_t591D2A86165F896B4B800BB5C25CE18672A55579 *)il2cpp_codegen_object_new(Action_t591D2A86165F896B4B800BB5C25CE18672A55579_il2cpp_TypeInfo_var);
 		Action__ctor_m570E96B2A0C48BC1DC6788460316191F24572760(L_9, __this, (intptr_t)((intptr_t)VuMarkTrackableEventHandler_OnVuMarkTargetAssigned_m0D0BC91D368ED352F25429A6B8C4D4528A58D8D6_RuntimeMethod_var), /*hidden argument*/NULL);
 		NullCheck(L_8);
 		VuMarkBehaviour_RegisterVuMarkTargetAssignedCallback_m40E9E3EECE8AC61A8431E59074C77A9F94FF39B0(L_8, L_9, /*hidden argument*/NULL);
 		// this.vumarkBehaviour.RegisterVuMarkTargetLostCallback(OnVuMarkTargetLost);
-		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_10 = __this->get_vumarkBehaviour_18();
+		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_10 = __this->get_vumarkBehaviour_20();
 		Action_t591D2A86165F896B4B800BB5C25CE18672A55579 * L_11 = (Action_t591D2A86165F896B4B800BB5C25CE18672A55579 *)il2cpp_codegen_object_new(Action_t591D2A86165F896B4B800BB5C25CE18672A55579_il2cpp_TypeInfo_var);
 		Action__ctor_m570E96B2A0C48BC1DC6788460316191F24572760(L_11, __this, (intptr_t)((intptr_t)VuMarkTrackableEventHandler_OnVuMarkTargetLost_mFAF56CE08FC896A52A22B2FAEE8171A92754A3B9_RuntimeMethod_var), /*hidden argument*/NULL);
 		NullCheck(L_10);
@@ -4596,7 +4618,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_OnVuforiaStarted_
 		VuforiaManager_t56F310BC8B59799D4A44824C42168D133AE095F7 * L_0 = VuforiaManager_get_Instance_m38B97FE4701802B3C070AA4D2D2201BAA39F8E40(/*hidden argument*/NULL);
 		NullCheck(L_0);
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_1 = VuforiaManager_get_CentralAnchorPoint_m5A7C7C05517D411AFE00EA78232C00E06BF7AD50(L_0, /*hidden argument*/NULL);
-		__this->set_centralAnchorPoint_22(L_1);
+		__this->set_centralAnchorPoint_24(L_1);
 		// }
 		return;
 	}
@@ -4656,7 +4678,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_UpdateVuMarkBorde
 	Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * G_B8_1 = NULL;
 	{
 		// if (this.lineRenderer)
-		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_0 = __this->get_lineRenderer_19();
+		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_0 = __this->get_lineRenderer_21();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Implicit_m8B2A44B4B1406ED346D1AE6D962294FD58D0D534(L_0, /*hidden argument*/NULL);
 		if (!L_1)
@@ -4667,7 +4689,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_UpdateVuMarkBorde
 	{
 		// this.lineRenderer.enabled =
 		//     (m_NewStatus == TrackableBehaviour.Status.EXTENDED_TRACKED) || VuforiaRuntimeUtilities.IsPlayMode();
-		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_2 = __this->get_lineRenderer_19();
+		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_2 = __this->get_lineRenderer_21();
 		int32_t L_3 = ((DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022 *)__this)->get_m_NewStatus_6();
 		G_B2_0 = L_2;
 		if ((((int32_t)L_3) == ((int32_t)4)))
@@ -4695,7 +4717,7 @@ IL_0024:
 		NullCheck(G_B4_1);
 		Renderer_set_enabled_m0933766657F2685BAAE3340B0A984C0E63925303(G_B4_1, (bool)G_B4_0, /*hidden argument*/NULL);
 		// if (this.lineRenderer.enabled)
-		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_5 = __this->get_lineRenderer_19();
+		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_5 = __this->get_lineRenderer_21();
 		NullCheck(L_5);
 		bool L_6 = Renderer_get_enabled_m40E07BB15DA58D2EF6F6796C6778163107DD7E1B(L_5, /*hidden argument*/NULL);
 		if (!L_6)
@@ -4706,7 +4728,7 @@ IL_0024:
 	{
 		// this.lineRenderer.material.color =
 		//     (m_NewStatus == TrackableBehaviour.Status.EXTENDED_TRACKED) ? Color.green : Color.cyan;
-		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_7 = __this->get_lineRenderer_19();
+		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_7 = __this->get_lineRenderer_21();
 		NullCheck(L_7);
 		Material_tF7DB3BF0C24DEC2FE0CB51E5DF5053D5223C8598 * L_8 = Renderer_get_material_m4434513446B652652CE9FD766B0E3D1D34C4A617(L_7, /*hidden argument*/NULL);
 		int32_t L_9 = ((DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022 *)__this)->get_m_NewStatus_6();
@@ -4743,7 +4765,7 @@ IL_005c:
 	{
 		// this.lineRenderer = GetComponentInChildren<LineRenderer>();
 		LineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3 * L_12 = Component_GetComponentInChildren_TisLineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3_m6FC610F34242A2AD5F2C579221AE2407F650B7EF(__this, /*hidden argument*/Component_GetComponentInChildren_TisLineRenderer_tD225C480F28F28A4D737866474F21001B803B7C3_m6FC610F34242A2AD5F2C579221AE2407F650B7EF_RuntimeMethod_var);
-		__this->set_lineRenderer_19(L_12);
+		__this->set_lineRenderer_21(L_12);
 	}
 
 IL_0068:
@@ -4766,7 +4788,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_UpdateCanvasFadeA
 	float V_1 = 0.0f;
 	{
 		// if (this.centralAnchorPoint != null)
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_0 = __this->get_centralAnchorPoint_22();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_0 = __this->get_centralAnchorPoint_24();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		bool L_1 = Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1(L_0, (Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
@@ -4776,7 +4798,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_UpdateCanvasFadeA
 	}
 	{
 		// Vector3 positionInCameraSpace = this.centralAnchorPoint.InverseTransformPoint(this.transform.position);
-		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_2 = __this->get_centralAnchorPoint_22();
+		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_2 = __this->get_centralAnchorPoint_24();
 		Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * L_3 = Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9(__this, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_4 = Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294(L_3, /*hidden argument*/NULL);
@@ -4792,10 +4814,10 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_UpdateCanvasFadeA
 		float L_9 = Vector3_Distance_mE316E10B9B319A5C2A29F86E028740FD528149E7(L_7, L_8, /*hidden argument*/NULL);
 		V_1 = L_9;
 		// this.canvasGroup.alpha = 1 - Mathf.InverseLerp(this.fadeRange.x, this.fadeRange.y, distance);
-		CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * L_10 = __this->get_canvasGroup_20();
-		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * L_11 = __this->get_address_of_fadeRange_21();
+		CanvasGroup_tE2C664C60990D1DCCEE0CC6545CC3E80369C7F90 * L_10 = __this->get_canvasGroup_22();
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * L_11 = __this->get_address_of_fadeRange_23();
 		float L_12 = L_11->get_x_0();
-		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * L_13 = __this->get_address_of_fadeRange_21();
+		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D * L_13 = __this->get_address_of_fadeRange_23();
 		float L_14 = L_13->get_y_1();
 		float L_15 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
@@ -4894,9 +4916,9 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_OnVuMarkTargetAss
 	{
 		// this.vumarkBehaviour = this.mTrackableBehaviour as VuMarkBehaviour;
 		TrackableBehaviour_t579D75AAFEF7B2D69F4B68931D5A58074E80A7E4 * L_1 = ((DefaultTrackableEventHandler_t6997E0A19AC0FABC165FB7264F57DF2EDF4E8022 *)__this)->get_mTrackableBehaviour_4();
-		__this->set_vumarkBehaviour_18(((VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 *)IsInstClass((RuntimeObject*)L_1, VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4_il2cpp_TypeInfo_var)));
+		__this->set_vumarkBehaviour_20(((VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 *)IsInstClass((RuntimeObject*)L_1, VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4_il2cpp_TypeInfo_var)));
 		// if (this.vumarkBehaviour.VuMarkTarget != null)
-		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_2 = __this->get_vumarkBehaviour_18();
+		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_2 = __this->get_vumarkBehaviour_20();
 		NullCheck(L_2);
 		RuntimeObject* L_3 = VuMarkBehaviour_get_VuMarkTarget_m434594A8103CD3A03CFB0E5BBD4F886D8F6CE527(L_2, /*hidden argument*/NULL);
 		if (!L_3)
@@ -4906,7 +4928,7 @@ extern "C" IL2CPP_METHOD_ATTR void VuMarkTrackableEventHandler_OnVuMarkTargetAss
 	}
 	{
 		// Debug.Log("<color=cyan>VuMark ID Tracked: </color>" + this.vumarkBehaviour.VuMarkTarget.InstanceId.NumericValue);
-		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_4 = __this->get_vumarkBehaviour_18();
+		VuMarkBehaviour_t639ADC64791886C7F8D65CD035E0F0E4C6E2FAC4 * L_4 = __this->get_vumarkBehaviour_20();
 		NullCheck(L_4);
 		RuntimeObject* L_5 = VuMarkBehaviour_get_VuMarkTarget_m434594A8103CD3A03CFB0E5BBD4F886D8F6CE527(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
