@@ -27,9 +27,15 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public TextMesh meshText;
     public TextMesh guyText;
     public TextMesh camText;
+    public TextMesh riddleText1;
+    public TextMesh riddleText2;
     public GameObject mesh;
     public GameObject guy;
     public GameObject cam;
+    public Animator anim;
+  
+
+
 
 
     #region UNITY_MONOBEHAVIOUR_METHODS
@@ -38,6 +44,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         meshText.text = "mesh at: " + mesh.transform.position;
         guyText.text = "guy at: " + guy.transform.position;
         camText.text = "cam at: " + cam.transform.position;
+        riddleText1.text = "Storage for all you wanted to stash and keep";
+        riddleText2.text = "For the more unlucky, it was also where they had to sleep.";
+
+        guy.gameObject.GetComponent<Animator>().Play("Stop Walking");
+// guy.gameObject.GetComponent<Animator>().Play("Weight Shift");
+        Debug.Log("Test");
+
     }
 
     protected virtual void Start()
@@ -47,6 +60,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
+        anim = GetComponent <Animator>();
+             
+
+        
     }
 
     protected virtual void OnDestroy()
