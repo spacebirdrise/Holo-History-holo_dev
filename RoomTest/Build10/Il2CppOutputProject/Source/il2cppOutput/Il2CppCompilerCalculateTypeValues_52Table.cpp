@@ -22,6 +22,8 @@
 
 // HoloToolkit.Unity.Interpolator
 struct Interpolator_t91D8B29AE390B7B78F51A16E607B6E077BCF08FB;
+// System.Char[]
+struct CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2;
 // System.String
 struct String_t;
 // System.Void
@@ -32,6 +34,8 @@ struct BoxCollider_t2DF257BBBFCABE0B9D78B21D238298D1942BFBAA;
 struct Light_tFDE490EADBC7E080F74CA804929513AF07C31A6C;
 // UnityEngine.Plane[]
 struct PlaneU5BU5D_t79471E0ABE147C3018D88A036897B6DB49A782AA;
+// UnityEngine.Transform
+struct Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA;
 
 
 
@@ -78,6 +82,51 @@ struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_com
 {
 };
 #endif // VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
+#ifndef ENUM_T2AF27C02B8653AE29442467390005ABC74D8F521_H
+#define ENUM_T2AF27C02B8653AE29442467390005ABC74D8F521_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Enum
+struct  Enum_t2AF27C02B8653AE29442467390005ABC74D8F521  : public ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF
+{
+public:
+
+public:
+};
+
+struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_StaticFields
+{
+public:
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* ___enumSeperatorCharArray_0;
+
+public:
+	inline static int32_t get_offset_of_enumSeperatorCharArray_0() { return static_cast<int32_t>(offsetof(Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_StaticFields, ___enumSeperatorCharArray_0)); }
+	inline CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* get_enumSeperatorCharArray_0() const { return ___enumSeperatorCharArray_0; }
+	inline CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2** get_address_of_enumSeperatorCharArray_0() { return &___enumSeperatorCharArray_0; }
+	inline void set_enumSeperatorCharArray_0(CharU5BU5D_t4CC6ABF0AD71BEC97E3C2F1E9C5677E46D3A75C2* value)
+	{
+		___enumSeperatorCharArray_0 = value;
+		Il2CppCodeGenWriteBarrier((&___enumSeperatorCharArray_0), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_marshaled_com
+{
+};
+#endif // ENUM_T2AF27C02B8653AE29442467390005ABC74D8F521_H
 #ifndef INTPTR_T_H
 #define INTPTR_T_H
 #ifdef __clang__
@@ -278,6 +327,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VECTOR3_TDCF05E21F632FE2BA260C06E0D10CA81513E6720_H
+#ifndef PIVOTAXIS_T0C9C612304ED1362B78F9DB9CBB7BE918A2F230D_H
+#define PIVOTAXIS_T0C9C612304ED1362B78F9DB9CBB7BE918A2F230D_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// HoloToolkit.Unity.PivotAxis
+struct  PivotAxis_t0C9C612304ED1362B78F9DB9CBB7BE918A2F230D 
+{
+public:
+	// System.Int32 HoloToolkit.Unity.PivotAxis::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(PivotAxis_t0C9C612304ED1362B78F9DB9CBB7BE918A2F230D, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PIVOTAXIS_T0C9C612304ED1362B78F9DB9CBB7BE918A2F230D_H
 #ifndef OBJECT_TAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_H
 #define OBJECT_TAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_H
 #ifdef __clang__
@@ -393,6 +471,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MONOBEHAVIOUR_T4A60845CF505405AF8BE8C61CC07F75CADEF6429_H
+#ifndef BILLBOARD_TAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD_H
+#define BILLBOARD_TAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// HoloToolkit.Unity.Billboard
+struct  Billboard_tAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// HoloToolkit.Unity.PivotAxis HoloToolkit.Unity.Billboard::PivotAxis
+	int32_t ___PivotAxis_4;
+	// UnityEngine.Transform HoloToolkit.Unity.Billboard::TargetTransform
+	Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * ___TargetTransform_5;
+
+public:
+	inline static int32_t get_offset_of_PivotAxis_4() { return static_cast<int32_t>(offsetof(Billboard_tAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD, ___PivotAxis_4)); }
+	inline int32_t get_PivotAxis_4() const { return ___PivotAxis_4; }
+	inline int32_t* get_address_of_PivotAxis_4() { return &___PivotAxis_4; }
+	inline void set_PivotAxis_4(int32_t value)
+	{
+		___PivotAxis_4 = value;
+	}
+
+	inline static int32_t get_offset_of_TargetTransform_5() { return static_cast<int32_t>(offsetof(Billboard_tAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD, ___TargetTransform_5)); }
+	inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * get_TargetTransform_5() const { return ___TargetTransform_5; }
+	inline Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA ** get_address_of_TargetTransform_5() { return &___TargetTransform_5; }
+	inline void set_TargetTransform_5(Transform_tBB9E78A2766C3C83599A8F66EDE7D1FCAFC66EDA * value)
+	{
+		___TargetTransform_5 = value;
+		Il2CppCodeGenWriteBarrier((&___TargetTransform_5), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BILLBOARD_TAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD_H
 #ifndef FIXEDANGULARSIZE_T84073CBDB97236B0628E55C301ECB054732ECF1A_H
 #define FIXEDANGULARSIZE_T84073CBDB97236B0628E55C301ECB054732ECF1A_H
 #ifdef __clang__
@@ -694,15 +812,21 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5200 = { sizeof (FixedAngularSize_t84073CBDB97236B0628E55C301ECB054732ECF1A), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5200[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5200 = { sizeof (Billboard_tAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5200[2] = 
+{
+	Billboard_tAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD::get_offset_of_PivotAxis_4(),
+	Billboard_tAA8C1AD8979B5E4EB34DF529C07E9F1485ED61CD::get_offset_of_TargetTransform_5(),
+};
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5201 = { sizeof (FixedAngularSize_t84073CBDB97236B0628E55C301ECB054732ECF1A), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5201[3] = 
 {
 	FixedAngularSize_t84073CBDB97236B0628E55C301ECB054732ECF1A::get_offset_of_SizeRatio_4(),
 	FixedAngularSize_t84073CBDB97236B0628E55C301ECB054732ECF1A::get_offset_of_startingDistance_5(),
 	FixedAngularSize_t84073CBDB97236B0628E55C301ECB054732ECF1A::get_offset_of_startingScale_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5201 = { sizeof (SimpleTagalong_t37199001ED0DBE680EBA7D85763CC3DD78FE3671), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5201[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5202 = { sizeof (SimpleTagalong_t37199001ED0DBE680EBA7D85763CC3DD78FE3671), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5202[12] = 
 {
 	SimpleTagalong_t37199001ED0DBE680EBA7D85763CC3DD78FE3671::get_offset_of_TagalongDistance_4(),
 	SimpleTagalong_t37199001ED0DBE680EBA7D85763CC3DD78FE3671::get_offset_of_EnforceDistance_5(),
@@ -717,8 +841,8 @@ extern const int32_t g_FieldOffsetTable5201[12] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5202 = { sizeof (Tagalong_tF6A72276638E02A84C0B08D58D247150310B4908), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable5202[12] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5203 = { sizeof (Tagalong_tF6A72276638E02A84C0B08D58D247150310B4908), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable5203[12] = 
 {
 	Tagalong_tF6A72276638E02A84C0B08D58D247150310B4908::get_offset_of_MinimumHorizontalOverlap_16(),
 	Tagalong_tF6A72276638E02A84C0B08D58D247150310B4908::get_offset_of_TargetHorizontalOverlap_17(),
