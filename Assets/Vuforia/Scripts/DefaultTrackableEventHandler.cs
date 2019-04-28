@@ -42,16 +42,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     public class GameStateController : MonoBehaviour
     {
-        enum possibleGameStatesRelatedToSWR
-        {
-            Intro,
-            PresentRiddle,
-            RightAnswer,
-            WrongAnswer,
-            Idle,
-            Outro
-        };
-        possibleGameStatesRelatedToSWR currentGameState = SWREnumHelpers.GetEnumObjectByValue<possibleGameStatesRelatedToSWR>(0);
         public List<AudioClip> Riddles;
         public List<AudioClip> RightAnswerResponse;
         public List<AudioClip> WrongAnswerResponse;
@@ -59,17 +49,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
       //  public LipSync SWRLipSyncObject;
       //  public List<LipSyncData> lipsyncDataCorrespondingToEachAudioClip;
 
-
-
-
     }
-    public static class SWREnumHelpers
-    {
-        public static T GetEnumObjectByValue<T>(int valueId)
-        {
-            return (T)Enum.ToObject(typeof(T), valueId);
-        }
-    }
+    
     
     #region UNITY_MONOBEHAVIOUR_METHODS
 
@@ -77,11 +58,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         meshText.text = "mesh at: " + mesh.transform.position;
         guyText.text = "guy at: " + guy.transform.position;
         camText.text = "cam at: " + cam.transform.position;
-        riddleText1.text = "Storage for all you wanted to stash and keep";
-        riddleText2.text = "For the more unlucky, it was also where they had to sleep.";
-
-        guy.gameObject.GetComponent<Animator>().Play("Stop Walking");
-// guy.gameObject.GetComponent<Animator>().Play("Weight Shift");
+        
+    //    guy.gameObject.GetComponent<Animator>().Play("Stop Walking");
+    // guy.gameObject.GetComponent<Animator>().Play("Weight Shift");
         Debug.Log("Test");
 
     }
@@ -94,9 +73,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
         anim = GetComponent <Animator>();
-             
 
-        
+
+        riddleText1.text = "Storage for all you wanted to stash and keep";
+        riddleText2.text = "For the more unlucky, it was also where they had to sleep.";
+
     }
 
     protected virtual void OnDestroy()
