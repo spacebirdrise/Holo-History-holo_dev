@@ -55,9 +55,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     #region UNITY_MONOBEHAVIOUR_METHODS
 
     void Update() {
-        meshText.text = "mesh at: " + mesh.transform.position;
-        guyText.text = "guy at: " + guy.transform.position;
-        camText.text = "cam at: " + cam.transform.position;
+     //   meshText.text = "mesh at: " + mesh.transform.position;
+     //   guyText.text = "guy at: " + guy.transform.position;
+     //   camText.text = "cam at: " + cam.transform.position;
         
     //    guy.gameObject.GetComponent<Animator>().Play("Stop Walking");
     // guy.gameObject.GetComponent<Animator>().Play("Weight Shift");
@@ -75,8 +75,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         anim = GetComponent <Animator>();
 
 
-        riddleText1.text = "Storage for all you wanted to stash and keep";
-        riddleText2.text = "For the more unlucky, it was also where they had to sleep.";
+     //   riddleText1.text = "Storage for all you wanted to stash and keep";
+     //   riddleText2.text = "For the more unlucky, it was also where they had to sleep.";
 
     }
 
