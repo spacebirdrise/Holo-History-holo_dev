@@ -19,7 +19,7 @@ public class ClickListener : MonoBehaviour
 
     void OnSelect()
     {
-        this.GetComponent<Renderer>().material.color = Color.red;
+       
         // send message to SWR with game object name
         //SWR.SendMessage("ObjectClicked", this.name);
         SWR.ObjectClicked(this.gameObject.name);

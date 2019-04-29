@@ -7,21 +7,34 @@ using UnityEngine;
 public class SWRStateMachine : MonoBehaviour{
 
     public AudioSource SWRAudioSource;
-    public AudioClip introduction;
+    public AudioClip intro_audio;
+    public AudioClip outro_audio;
+
+    public AudioClip coffer_riddle;
+    public AudioClip coffer_answer;
+
     public AudioClip dole_riddle;
     public AudioClip dole_answer;
 
+    public AudioClip court_riddle;
+    public AudioClip court_answer;
 
-    private String[] riddleObjects = { "Dole", "Coffer" };
-    private String currentCorrect;
-    private bool riddleSolved;
+    private String[] riddleObjects = { "Coffer", "Dole", "Court" };
+    private String[] riddleTexts = { "coffer riddle text here", "dole riddle text here", "court riddle text here" };
+    private AudioClip[] riddleAudios;
+    private AudioClip[] answerAudios;
+
+
+    //private bool riddleSolved;
     private bool guessWaiting;
+    private int riddleCounter = 0;
 
     public TextMesh Riddle1;
     public TextMesh Riddle2;
 
     enum SWRStates
     {
+        Intro,
         Walking,
         Speaking,
         PresentRiddle,
@@ -35,32 +48,59 @@ public class SWRStateMachine : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
-        currentGameState = SWRStates.PresentRiddle;
-        currentCorrect = riddleObjects[0];
+        riddleAudios = new AudioClip[]{ coffer_riddle, dole_riddle, court_riddle };
+        answerAudios = new AudioClip[]{ coffer_answer, dole_answer, court_answer };
+
+        Riddle1.text = "Welcome to Sir Walter's Scavenger Hunt!";
+        Riddle2.text = "Please click on Sir Walter's head to begin";
+
+        currentGameState = SWRStates.Idle;  // start in idle mode while waiting for intro
     }
 
     // Update is called once per frame
     void Update(){
         this.gameObject.GetComponent<Animator>().Play("Stop Walking");
 
+        if (currentGameState == SWRStates.Intro)
+        {
+            if (!SWRAudioSource.isPlaying)
+            {
+                currentGameState = SWRStates.PresentRiddle;
+            }
+        }
+
         if (currentGameState == SWRStates.PresentRiddle)
         {
-            SWRAudioSource.clip = dole_riddle;
+
+            Riddle1.text = riddleTexts[riddleCounter]; // displays next riddle after incrementing riddle counter
+            Riddle2.text = "";
+
+            SWRAudioSource.clip = riddleAudios[riddleCounter];
             SWRAudioSource.Play();
             currentGameState = SWRStates.Speaking;
         }
 
+        if( currentGameState == SWRStates.CorrectAnswer)
+        {
+
+            if (!SWRAudioSource.isPlaying && riddleCounter < riddleAudios.Length)
+            {
+                currentGameState = SWRStates.PresentRiddle;
+            }
+            else if (!SWRAudioSource.isPlaying)
+            {
+                SWRAudioSource.clip = outro_audio;
+                SWRAudioSource.Play();
+                currentGameState = SWRStates.Outro;
+            }
+        }
+
         if (currentGameState == SWRStates.Speaking)
         {
-            if (!SWRAudioSource.isPlaying && riddleSolved == false)
+            if (!SWRAudioSource.isPlaying)
             {
                 currentGameState = SWRStates.Idle;
             }
-            if (!SWRAudioSource.isPlaying && riddleSolved == true)
-            {
-                currentGameState = SWRStates.Outro;
-            }
-
         }
 
         if(currentGameState == SWRStates.Idle)
@@ -70,32 +110,42 @@ public class SWRStateMachine : MonoBehaviour{
 
         if(currentGameState == SWRStates.Outro)
         {
-            Riddle1.text = "Finished all riddles";
-            Riddle2.text = "End of experience";
+            Riddle1.text = "Congratulations!";
+            Riddle2.text = "You've solved all of Sir Walter's Riddles";
         }
     }
 
     // receive message here with game object name. compare to current correct object
     public void ObjectClicked(String nameClicked)
     {
-        if(nameClicked == currentCorrect)
+        if(nameClicked == "Intro")
         {
-            Riddle1.text = "Correct!";
-            Riddle2.text = "";
+            SWRAudioSource.clip = intro_audio;
+            SWRAudioSource.Play();
+            currentGameState = SWRStates.Intro;
+            // remove start box
+        }
 
-            currentGameState = SWRStates.Speaking;
-            riddleSolved = true;
-            SWRAudioSource.clip = dole_answer;
+        if(nameClicked == riddleObjects[riddleCounter])
+        {
+
+            SWRAudioSource.clip = answerAudios[riddleCounter];
+            riddleCounter += 1;
             SWRAudioSource.Play();
 
-
+            currentGameState = SWRStates.CorrectAnswer;
+           
             // control SWR if correct object is clicked
         }
-       if(nameClicked != currentCorrect)
+       if(nameClicked != riddleObjects[riddleCounter])
         {
             // code here for playing incorrect answer response
             Riddle1.text = "NOT Correct!";
             Riddle2.text = "";
+            GameObject.Find(nameClicked).GetComponent<Renderer>().material.color = Color.red;
+            new WaitForSecondsRealtime(3);
+            GameObject.Find(nameClicked).GetComponent<Renderer>().material.color = Color.white;
+
             // should look something like this
             //currentGameState = SWRStates.Speaking;
             //riddleSolved = false;
