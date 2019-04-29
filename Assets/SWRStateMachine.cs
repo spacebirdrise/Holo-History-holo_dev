@@ -8,7 +8,7 @@ public class SWRStateMachine : MonoBehaviour{
 
     public AudioSource SWRAudioSource;
     public AudioClip intro_audio;
-    public AudioClip outro_audio;
+    //public AudioClip outro_audio;
 
     public AudioClip coffer_riddle;
     public AudioClip coffer_answer;
@@ -89,8 +89,8 @@ public class SWRStateMachine : MonoBehaviour{
             }
             else if (!SWRAudioSource.isPlaying)
             {
-                SWRAudioSource.clip = outro_audio;
-                SWRAudioSource.Play();
+                //SWRAudioSource.clip = outro_audio;
+                //SWRAudioSource.Play();
                 currentGameState = SWRStates.Outro;
             }
         }

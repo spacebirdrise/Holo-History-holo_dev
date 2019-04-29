@@ -1526,14 +1526,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SWRAudioSource: {fileID: 1731682402}
-  intro_audio: {fileID: 0}
-  outro_audio: {fileID: 0}
-  coffer_riddle: {fileID: 0}
-  coffer_answer: {fileID: 0}
-  dole_riddle: {fileID: 0}
-  dole_answer: {fileID: 0}
-  court_riddle: {fileID: 0}
-  court_answer: {fileID: 0}
+  intro_audio: {fileID: 8300000, guid: fba83799040e80445a324273dd8733db, type: 3}
+  coffer_riddle: {fileID: 8300000, guid: 57cf9dbe679fd6540920dc80ce5fe297, type: 3}
+  coffer_answer: {fileID: 8300000, guid: 5fc5ac290de372f4d948e1769a2fe2cb, type: 3}
+  dole_riddle: {fileID: 8300000, guid: 862f2090aede8b84c93b66da90f196b9, type: 3}
+  dole_answer: {fileID: 8300000, guid: f764d5ee875ed1a45b6071689b166904, type: 3}
+  court_riddle: {fileID: 8300000, guid: 19fc47aa0d8a4be40b76f756c053eeec, type: 3}
+  court_answer: {fileID: 8300000, guid: f5fcbce7bb24e784c9e80ee12e6a64f5, type: 3}
   Riddle1: {fileID: 226031937}
   Riddle2: {fileID: 1258673750}
 --- !u!1 &1880041589
