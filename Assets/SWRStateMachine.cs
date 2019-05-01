@@ -8,11 +8,11 @@ public class SWRStateMachine : MonoBehaviour{
 
     //public GameObject DoleBox;
     //public GameObject CofferBox;
-    //public GameObject CourtBox;
+    public GameObject IntroBox;
 
     public AudioSource SWRAudioSource;
     public AudioClip intro_audio;
-    
+    public Material wrongMaterial;
     //public AudioClip outro_audio;
 
     public AudioClip coffer_riddle;
@@ -52,7 +52,7 @@ public class SWRStateMachine : MonoBehaviour{
     public TextMesh Riddle3;
     public TextMesh Riddle4;
 
-
+   // public ClickListener testlistener;
 
     enum SWRStates
     {
@@ -70,11 +70,13 @@ public class SWRStateMachine : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
+        this.gameObject.GetComponent<Animator>().enabled = false;
+
         riddleAudios = new AudioClip[]{ coffer_riddle, dole_riddle, court_riddle };
         answerAudios = new AudioClip[]{ coffer_answer, dole_answer, court_answer };
 
         Riddle1.text = "Welcome to Sir Walter's Scavenger Hunt!";
-        Riddle2.text = "Please click on Sir Walter's head to begin";
+        Riddle2.text = "Please click the box on the table to begin";
         Riddle3.text = "";
         Riddle4.text = "";
 
@@ -83,8 +85,16 @@ public class SWRStateMachine : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        this.gameObject.GetComponent<Animator>().Play("Stop Walking");
+        if (Input.GetKey("p")){
 
+            Debug.Log("pppp");
+            IntroBox.GetComponent<Renderer>().enabled = false;
+            //ObjectClicked(IntroBox);
+            //   testlistener.GetComponent<Renderer>().material = wrongMaterial;
+            //   testlistener.changeToWaitingState();
+
+            //this.gameObject.GetComponent<Animator>().Play("walkforward");
+        }
         if (currentGameState == SWRStates.Intro)
         {
             if (!SWRAudioSource.isPlaying)
@@ -140,7 +150,8 @@ public class SWRStateMachine : MonoBehaviour{
             Riddle1.text = "Congratulations!";
             Riddle2.text = "You've solved all of Sir Walter's Riddles";
             Riddle3.text = "and finished the experience.";
-            Riddle4.text = "You may click on Sir Walter's head to play again.";
+            Riddle4.text = "";
+            currentGameState = SWRStates.Idle;
         }
     }
 
@@ -148,15 +159,18 @@ public class SWRStateMachine : MonoBehaviour{
     public void ObjectClicked(ClickListener objectThatWasClicked)
     {
         String nameClicked = objectThatWasClicked.gameObject.name;
-        if (nameClicked == "Intro")
+        if (nameClicked == "Intro" && currentGameState == SWRStates.Idle)
         {
+            IntroBox.GetComponent<Renderer>().enabled = false;
+            this.gameObject.GetComponent<Animator>().enabled = true;
             SWRAudioSource.clip = intro_audio;
             SWRAudioSource.Play();
+            this.gameObject.GetComponent<Animator>().Play("walkforward");
             currentGameState = SWRStates.Intro;
             // remove start box
         }
 
-        else if(nameClicked == riddleObjects[riddleCounter])
+        else if(nameClicked == riddleObjects[riddleCounter] && currentGameState == SWRStates.Idle)
         {
             Riddle1.text = "Correct! Well done!";
             Riddle2.text = "";
@@ -170,13 +184,10 @@ public class SWRStateMachine : MonoBehaviour{
            
             // control SWR if correct object is clicked
         }
-       else if(nameClicked != riddleObjects[riddleCounter])
+       else if(nameClicked != riddleObjects[riddleCounter] && currentGameState == SWRStates.Idle)
         {
             // code here for playing incorrect answer response
-            Riddle1.text = "NOT CORRECT OBJECT DEBUG";
-            Riddle2.text = "REMOVE THIS WHEN OBJECTS FLASH CORRECTLY";
-            
-            objectThatWasClicked.GetComponent<Renderer>().material.color = Color.red;
+            objectThatWasClicked.GetComponent<Renderer>().material=wrongMaterial;
             objectThatWasClicked.changeToWaitingState();
            
         }

@@ -5,17 +5,24 @@ using UnityEngine;
 public class ClickListener : MonoBehaviour
 {
     public SWRStateMachine SWR;
+
+    //public TextMesh debug1;
+    //public TextMesh debug2;
+    //public TextMesh debug3;
+
     int timeToWait = 0;
     enum WaitingStates{Waiting,NotWaiting }
 
     Material originalMaterial;
 
     int maximumTimeToWaitForClickedObject = 180;//frames
+
     WaitingStates currentState = WaitingStates.NotWaiting;
     // Start is called before the first frame update
     void Start()
     {
         originalMaterial = this.GetComponent<Renderer>().material;
+        //Color test=new Color()
     }
 
     // Update is called once per frame
@@ -27,6 +34,8 @@ public class ClickListener : MonoBehaviour
 
         if (currentState == WaitingStates.Waiting) {
             timeToWait--;
+        //    debug2.text = "state : waiting";
+        //    debug3.text = timeToWait.ToString();
             if (timeToWait < 0)
             {
                 currentState = WaitingStates.NotWaiting;
@@ -44,6 +53,7 @@ public class ClickListener : MonoBehaviour
     public void changeToWaitingState() {
         timeToWait = maximumTimeToWaitForClickedObject;
         currentState = WaitingStates.Waiting;
+    //    debug1.text = "called change to waiting state";
     }
 
     void OnSelect()
